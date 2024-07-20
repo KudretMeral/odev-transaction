@@ -20,7 +20,7 @@ public class TransactionController
         return new ResponseEntity<>(transactionService.createTransaction(transaction), HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/createTransaction/{transactionId}")
+    @DeleteMapping("/deleteTransaction/{transactionId}")
     public ResponseEntity<?> deleteTransaction(@PathVariable Long transactionId)
     {
         transactionService.deleteTransaction(transactionId);
